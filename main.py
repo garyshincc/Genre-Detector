@@ -249,7 +249,7 @@ def get_rnn_dense_model():
 			LSTM(
 				input_dim=genre_features.validation_X.shape[2],
 				output_dim=128,
-				activation='sigmoid',
+				activation='relu',
 				dropout_U=0.05,
 				dropout_W=0.05,
 				return_sequences=True
@@ -258,7 +258,7 @@ def get_rnn_dense_model():
 		model.add(
 			LSTM(
 				output_dim=64,
-				activation='sigmoid',
+				activation='relu',
 				dropout_U=0.05,
 				dropout_W=0.05,
 				return_sequences=False
