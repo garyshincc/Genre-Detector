@@ -92,11 +92,6 @@ class GenreFeatureData:
 
 	def extract_audio_features(self, list_of_audiofiles, hop_length=512):
 		timeseries_length_list = []
-
-		''' 
-		For Nanoleaf Rhythm, there are 32 fft bins,
-		and sampling rate is 11025.
-		'''
 		default_sample_rate = 11025
 		default_num_fft_bins = 32
 
